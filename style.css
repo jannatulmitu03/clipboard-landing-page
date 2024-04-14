@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    font-size: 0.625rem;
+}
+
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+
+}
+
+section{
+    padding: 5rem 1rem;
+}
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 2.3rem;
+    font-weight: 600;  
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.hero{
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat:no-repeat ;
+    background-size:cover ;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 1.8rem 0;
+}
+
+.btn-groups{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn1{
+    padding: 1.4rem 5rem;
+    background-color: var(--Strong-Cyan);
+    color: white;
+    border-radius: 3rem;
+}
+.btn2{
+    padding: 1.4rem 5rem;
+    background-color: var(--Light-Blue);
+    color: white;
+    border-radius: 3rem;
+}
+
+.snippets-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    
+}
+
+.snippets-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.snippets-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.snippets-category{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+
+.snippets-category h3{
+    padding: 1rem 0;
+}
+
+.Clipboard-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+}
+
+.Clipboard-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.workflow-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+   
+}
+
+.workflow-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.workflow-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+    padding: 4rem 0;
+
+}
+
+.workflow-content h3{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.brand-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.brand-content img {
+width: 110px;
+}
+
+.download-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.download-header{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.footer-logo{
+    width: 60px;
+}
+
+
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    margin: 8rem 0;
+}
+
+.footer-service{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.footer-service p{
+    padding: 2rem 0;
+}
+
+
+
+.icons {
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+.attribution {
+     font-size: 11px; text-align: center;
+     
+     }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width:600px) {
+ 
+    .btn-groups{
+        display: flex ;
+        align-items: center;
+        gap: 3rem;
+    }
+
+   
+
+
+    .snippets-blog {
+        display: flex;
+        
+        gap: 3rem;
+    }
+  }
