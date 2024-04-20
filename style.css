@@ -18,32 +18,36 @@ body{
 }
 
 section{
-    padding: 5rem 1rem;
+    padding: 5rem 0rem;
 }
+
 img{
     max-width: 100%;
 }
 
 a{
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 800;
+    color: var(--Dark-Grayish-Blue);
 }
 
 p{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
+    line-height: 2.5rem;
 }
 
 h2{
     font-size: 2.8rem;
     font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
 }
 
 h3{
@@ -54,13 +58,14 @@ h3{
 .container{
     max-width: 1200px;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 .hero{
     background-image: url(images/bg-header-desktop.png);
     background-repeat:no-repeat ;
     background-size:cover ;
+    width: 100%;
 }
 
 .hero-container{
@@ -87,17 +92,31 @@ h3{
 }
 
 .btn1{
-    padding: 1.4rem 5rem;
+    padding: 1.6rem 6rem;
     background-color: var(--Strong-Cyan);
     color: white;
     border-radius: 3rem;
+    cursor: pointer;
 }
+
+.btn1:hover{
+background-color: hsl(171, 50%, 59%);
+transition: all .3s ease;
+}
+
 .btn2{
-    padding: 1.4rem 5rem;
+    padding: 1.6rem 6rem;
     background-color: var(--Light-Blue);
     color: white;
     border-radius: 3rem;
+    cursor: pointer;
 }
+
+.btn2:hover{
+    background-color: hsl(233, 58%, 69%);
+    transition: all .3s ease;
+    }
+    
 
 .snippets-container{
     display: flex;
@@ -135,6 +154,8 @@ h3{
 .Clipboard-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     gap: 5rem;
 }
@@ -149,6 +170,8 @@ h3{
 .workflow-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     gap: 4rem;
    
@@ -164,6 +187,7 @@ h3{
 .workflow-content{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 5rem;
     padding: 4rem 0;
@@ -183,7 +207,7 @@ h3{
 }
 
 .brand-content img {
-width: 110px;
+width: 30%;
 }
 
 .download-container{
@@ -200,6 +224,10 @@ width: 110px;
     gap: 3rem;
 }
 
+footer{
+    padding: 5rem 0;
+    background-color: rgba(250, 242, 242, 0.813);
+}
 
 .footer-logo{
     width: 60px;
@@ -211,51 +239,354 @@ width: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 3rem;
-    margin: 8rem 0;
 }
 
 .footer-service{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    cursor: pointer;
+    gap: 3rem;
     
 }
+
 .footer-service p{
     padding: 2rem 0;
+    font-weight: 500;
+}
+.footer-service p:hover{
+    color: var(--Strong-Cyan);
+    transition: all .3s ease;
 }
 
 
 
 .icons {
     display: flex;
+    align-items: center;
     gap: 3rem;
+    cursor: pointer;
+}
+.icons a i{
+    font-size: 4rem;
+    color: black;
+}
+.icons a i:hover {
+    color: var(--Strong-Cyan);
+    transition: all .3s ease;
 }
 
 
+@media screen and (min-width:600px){
 
-.attribution {
-     font-size: 11px; text-align: center;
-     
-     }
-.attribution a { color: hsl(228, 45%, 44%); }
+section{
+    padding: 7rem 0rem;
+}
 
+h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
 
-@media (min-width:600px) {
- 
-    .btn-groups{
-        display: flex ;
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 2.8rem;
+    font-weight: 600;  
+}
+    .hero-container {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
     }
 
-   
-
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+        padding: 1.8rem 0;
+        width: 80%;
+    }
 
     .snippets-blog {
         display: flex;
-        
-        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
     }
+
+    .snippets-content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .snippets-category {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 3rem 0;
+        width: 95%px;
+        text-align: start;
+    }
+
+    .snippets-img{
+        width: 70%;
+    }
+
+    .brand-content img {
+        width: 15%;
+    }
+
+    .brand-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .Clipboard-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        gap: 2rem;
+    }
+    .clipboard-img {
+        width: 60%;
+    }
+
+
+    .workflow-blog {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 2rem;
+       
+    }
+    .workflow-blog p{
+        width: 60%;
+       
+    }
+
+    .download-header {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        width: 80%;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .footer-service {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+        text-align: start;
+    }
+
+    .footer-blog{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        row-gap: 3rem;
+        column-gap: 3rem;
+    }
+
+    .footer-blog p{
+        font-size: 1.6rem;
+    }
+
+    .footer-logo{
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (min-width:780px) {
+    section{
+        padding: 10rem 0;
+    }    
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 2.8rem;
+    font-weight: 600;  
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 1.8rem 0;
+    width: 60%;
+}
+    .btn-groups{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .btn1{
+        padding: 1.8rem 5rem;
+    }
+
+    .btn2{
+        padding: 1.8rem 5rem;
+    }
+
+    .snippets-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8rem;
+    }
+
+    .snippets-content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 2rem;
+    }
+
+    .snippets-blog {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+    }
+
+    .snippets-category {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 0;
+        width: 40%;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .Clipboard-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        gap: 2rem;
+    }
+
+    .workflow-content {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 2rem;
+        padding: 4rem 0;
+    }
+
+    .workflow-blog p{
+        width: 86%;
+    }
+
+    .brand-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* .brand-content img {
+        width: 140px;
+    } */
+
+    .download-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5rem;
+    }
+
+    .download-header {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        width: 60%;
+    }
+
+    footer{
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer-service {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10rem;
+        text-align: start;
+    }
+
+    .footer-logo{
+        margin-top: 3rem;
+    }
+
+    .footer-blog{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        row-gap: 3rem;
+        column-gap: 5rem;
+    }
+
+   
   }
